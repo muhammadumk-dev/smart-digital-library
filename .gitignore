@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.env
+.env.local
+uploads/resources/*
+uploads/covers/*
+!uploads/resources/.gitkeep
+!uploads/covers/.gitkeep
+__pycache__/
+*.pyc
+models/*.pkl
+.DS_Store
+Thumbs.db

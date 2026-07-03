@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const protect = require('../middleware/authMiddleware');
+const adminOnly = require('../middleware/adminMiddleware');
+const upload = require('../middleware/uploadMiddleware');
+const { createResource, getResources, getResourceById, downloadResource } = require('../controllers/resourceController');
+router.get('/', getResources);
+router.post('/', protect, adminOnly, upload.fields([{ name: 'file', maxCount: 1 }, { name: 'cover', maxCount: 1 }]), createResource);
+router.get('/:id', getResourceById);
+router.post('/:id/download', protect, downloadResource);
+module.exports = router;

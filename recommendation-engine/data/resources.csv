@@ -1,0 +1,4 @@
+id,title,author,category,department,course_code,keywords,description
+1,Introduction to Software Engineering,Ian Sommerville,Book,Software Engineering,SFE 4201,"software engineering requirements design testing","A basic software engineering resource for students."
+2,System Analysis and Design,Kendall and Kendall,Book,Software Engineering,SFE 4302,"system analysis design sdlc uml","A resource on SDLC, feasibility study, UML and system design."
+3,Database Management Systems,Elmasri,Book,Computer Science,CSC 3201,"database sql normalization erd","Database design and SQL concepts."
